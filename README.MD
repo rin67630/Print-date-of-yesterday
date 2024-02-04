@@ -17,7 +17,7 @@ So I dug into the guts of C++ ctime and propose that solution:
     yesterdaynow = now - 86400;
     yesterdaytimeinfo = localtime(&yesterdaynow);
     strftime(charbuff, 30, "%x ", yesterdaytimeinfo);
-    println;
+    println();
     print(charbuff);
 
 That's it.
